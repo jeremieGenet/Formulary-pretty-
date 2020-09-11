@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(83, 83, 83);
+    /*background: url() no-repeat cover;**
+    /*background-repeat: no-repeat;*/
+}
+.contact-form{
+    position: absolute;
+    /* Permet de centrer le contenu (formulaire) */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+
+    width: 400px;
+    background: #fff;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.2);
+}
+.contact-form h2{
+    margin: 0 0 40px;
+    padding: 0;
+    color: #f7497d;
+    text-transform: uppercase;
+}
+.contact-form input{
+    padding: 10px 0;
+    margin-bottom: 30px;
+}
+.contact-form textarea{
+    height: 80px;
+    padding: 10px 0;
+    margin-bottom: 40px;
+}
+.contact-form input, 
+.contact-form textarea{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: none;
+    outline: none; /* Supprime l'encadrement au focus de l'input ou textarea */
+    border: none;
+    border-bottom: 2px solid #999;
+}
+.contact-form textarea{
+    margin-bottom: 20px;
+}
+.contact-form input[type='submit']{
+    border-bottom: none;
+    cursor: pointer;
+    background: #f7497d;
+    color: #fff;
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.contact-form form div{
+    position: relative;
+}
+.contact-form form div label{
+    position: absolute;
+    top: 10px;
+    left: 0;
+    color: #999;
+    transition: .5s;
+    pointer-events: none;
+}
+.contact-form input:focus ~ label, 
+.contact-form textarea:focus ~ label,
+.contact-form input:valid ~ label, 
+.contact-form textarea:valid ~ label
+{
+    top: -12px;
+    left: 0;
+    color: #f7497d;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus,
+.contact-form input:valid, 
+.contact-form textarea:valid
+{
+    border-bottom: 2px solid  #f7497d;
+}
