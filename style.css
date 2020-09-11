@@ -2,8 +2,9 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color: rgb(83, 83, 83);
-    /*background: url() no-repeat cover;**
+    /*background-color: rgb(83, 83, 83);*/
+    background-image: url("./ville.jpg");
+    background-size: cover;
     /*background-repeat: no-repeat;*/
 }
 .contact-form{
@@ -14,16 +15,17 @@ body{
     transform: translate(-50%, -50%); 
 
     width: 400px;
-    background: #fff;
     padding: 40px;
     box-sizing: border-box;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 5px 10px  rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 10px 10px  rgba(0, 0, 0, 0.9);
+    background: rgb(38, 24, 41);
 }
 .contact-form h2{
+    text-align: center;
     margin: 0 0 40px;
     padding: 0;
-    color: #f7497d;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
 }
 .contact-form input{
@@ -43,6 +45,7 @@ body{
     outline: none; /* Supprime l'encadrement au focus de l'input ou textarea */
     border: none;
     border-bottom: 2px solid #999;
+    background: rgb(38, 24, 41);
 }
 .contact-form textarea{
     margin-bottom: 20px;
@@ -50,7 +53,7 @@ body{
 .contact-form input[type='submit']{
     border-bottom: none;
     cursor: pointer;
-    background: #f7497d;
+    background: #e024e0;
     color: #fff;
     margin-bottom: 0;
     text-transform: uppercase;
@@ -63,7 +66,7 @@ body{
     position: absolute;
     top: 10px;
     left: 0;
-    color: #999;
+    color: rgb(255, 255, 255);
     transition: .5s;
     pointer-events: none;
 }
@@ -74,7 +77,7 @@ body{
 {
     top: -12px;
     left: 0;
-    color: #f7497d;
+    color:#e024e0;
     font-size: 12px;
     font-weight: bold;
 }
@@ -84,5 +87,9 @@ body{
 .contact-form input:valid, 
 .contact-form textarea:valid
 {
-    border-bottom: 2px solid  #f7497d;
+    border-bottom: 2px solid  #e024e0;
+}
+
+.contact-form input, textarea{
+    color: #999;
 }
